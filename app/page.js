@@ -8,7 +8,7 @@ export default function Home() {
     { id: 3, text: 'הוצאת ויזה', done: false, description: 'בדוק אם יש צורך בויזה.' },
   ]);
 
-  const handleCheck = (id: number) => {
+  const handleCheck = (id) => {  // הסרת הגדרת הטיפוס
     const updatedList = checklist.map(item => 
       item.id === id ? { ...item, done: !item.done } : item
     );
